@@ -1,0 +1,185 @@
+/* 字体导入 */
+@font-face{
+    font-family: 'Dinkie7x';
+    src: url('assest/font/DinkieBitmap-7px.woff2')format('woff2');
+}
+@font-face{
+    font-family: 'Dinkie9x';
+    src: url('assest/font/DinkieBitmap-9px.woff2')format('woff2');
+ }
+ @font-face{
+    font-family: 'Dinkie9xcode';
+    src: url('assest/font/DinkieBitmap-9pxCode.woff2')format('woff2');
+    }
+@font-face{
+    font-family: 'Dinkie9xitalic';
+    src: url('assest/font/DinkieBitmap-9pxItalic.woff2')format('woff2');
+    }
+@font-face {
+    font-family: 'HYQiHeiY4';
+    src: url('assest/font/HYQiHeiY4-95W.ttf')format('truetype');
+}
+ /* basic图形 */
+ body{
+    background-color: #ffbea0;
+}
+#bigface{
+    width: 100vw;
+    position: absolute;
+    top: 0;
+}
+/* 返回键 */
+.pic2{
+    width: 7.6vw;
+}
+#a1{
+    font-family: "Dinkie7x";
+    position: absolute;
+    left: 1vw;
+    top: 1vw;
+    font-size: 2vw;
+}
+#back{
+    z-index: 10;
+    position: absolute;
+    left: 1vw;
+    top: 1vw;
+}
+.top{
+    height: 4vw;
+    width: 4vw;
+    position: fixed;
+    bottom: 3vw;
+    right: 5vw;
+    background-color: #fc9d5d;
+    border-radius: 50%;
+}
+.top-t{
+    font-family: "Dinkie7x";
+    font-size: 2vw;
+    position: fixed;
+    bottom: 3.4vw;
+    right: 5.4vw;
+}
+/* 返回动画 */
+#back:hover{
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.8s;
+    transition-property: all;
+    transform: rotate(-23deg);
+    transition-delay: 0s;
+   }
+   #back{
+       transition: all 0.4s ease 0s;
+   }
+
+/* 文章框架部分 */
+#title{
+    font-family: "Dinkie9xcode";
+    color: white;  
+    z-index: 99;
+    font-size: 12vw;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: -4.43vw;
+}
+#rec1{
+    background-color: #2eac76;
+    width: 90vw;
+    height: max-content;
+    position: absolute;
+    top: 10vw;
+    left:4.5vw;
+    border-radius: 2vw;
+    z-index: 1;
+    border: 1.5vw solid;
+    border-color: #2eac76;
+}
+.part{
+    display: flex;
+    width: 60vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: center;
+   margin-left: 15vw;
+}
+
+
+/* 链接文字基础设定 */
+a:link{ text-decoration-line: none; color: white;}
+a:active{ text-decoration-line: none; color: #507b00;}
+a:hover{ text-decoration-line: none;color: rgb(16, 139, 104);}
+a:visited{text-decoration-line: none;color: rgb(54, 74, 57);}
+.list{
+    font-family: "Dinkie9x";
+    font-size: 2vw;
+    z-index: 8;
+    position: fixed;
+    right: 7vw;    
+    bottom: 0;
+    left: 5vw;
+}
+/* 文字+主页内容 */
+
+.blank{
+    height: 8vw;
+    width: 60vw;
+}
+.space{
+    height: 20vw;
+    width: 60vw;
+}
+.item{
+    width: 60vw;
+}
+.text{
+    font-size: 2.5vw;
+    color: white;
+    width: 70vw;
+    text-align: left;
+    margin-top: 15vw;
+    margin-left: 5vw;
+    margin-right: 20vw;
+}
+.pic{
+    width: 60vw;
+    position: inherit;
+    left: 25vw;
+}
+.h{
+    font-family:"HYQiHeiY4";
+    font-size: 5vw;
+    width: max-content;
+    font-weight: 500;
+    color: white;
+}
+.n{
+    font-family: "Dinkie7x";
+    font-size: 1.8vw;
+    width: max-content;
+    color: white;
+}
+.p{
+    margin-top: 3vw;
+    margin-bottom: 1.4vw;
+    margin-left:10vw ;
+    color: rgb(236, 236, 236);
+    font-size: 1.2vw;
+}
+iframe{
+    height: 33.8vw;
+    width: 80vw;
+}
+#iframe1{
+    height: 42vw;
+    width: 30vw;
+    margin-left: 15vw;
+}
+/* 悬浮窗口部分 */
+#container {
+    position: fixed;
+    z-index: 9999;
+    }

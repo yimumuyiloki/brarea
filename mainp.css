@@ -1,144 +1,140 @@
+@font-face{
+    font-family: 'Dinkie9xcode';
+    src: url('assest/font/DinkieBitmap-9pxCode.woff2')format('woff2');
+    }
+@font-face{
+    font-family: 'Dinkie9xitalic';
+    src: url('assest/font/DinkieBitmap-9pxItalic.woff2')format('woff2');
+    }
+@font-face{
+    font-family: 'Dinkie7x';
+    src: url('assest/font/DinkieBitmap-7px.woff2')format('woff2');
+}
+@font-face{
+    font-family: 'Dinkie9x';
+    src: url('assest/font/DinkieBitmap-9px.woff2')format('woff2');
+    }
+@font-face {
+    font-family: 'Bely';
+    src: url('assest/font/BelyDisplay-Regular.woff2.ttf')format('truetype');
+}
+
 /* 文本内容 */
 body{
     background-color: #ffbea0;
 }
+.main{
+    transform: scale(100vw,100vw);
+}
 .title{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
     text-align: right;
 }
 #t1{
-    font-size: 100px;
-    position: inherit;
+    font-family: "Dinkie9x";
+    font-size: 7vw;
+    position: absolute;
+    right: 0;
+    top: -2vw;
+    margin: 0;
     color: white;
 
 }
 #t2{
-    font-size: 100px;
-    position: inherit;
-    transform: translateY(-50px);
+    font-family: "Dinkie7x";
+    font-size: 7vw;
+    position: absolute;
+    right: 0;
+    top: 4vw;
     color: white;
 }
 #t3{
-    font-size: 210px;
-    position: inherit;
-    transform: translateY(90px);
+    font-family: "Dinkie7x";
+    font-size: 10vw;
+    position: absolute;
+    right: 0;
+    top: 28vw;
     color: white;
 }
 #t4{
-    font-size: 210px;
-    position: inherit;
-    transform: translateY(0px);
+    font-family: "Bely";
+    font-size: 14.5vw;
+    position: absolute;
+    right: 0;
+    top: 38vw;
     color: white;
 }
-#p1{
+.box{
+    font-size: 2.7vw;
+    font-family: "Dinkie7x";
+    top: 3.3vw;
+    left: 2vw;
     position: absolute;
-    transform: translate(90px,-780px) ;
-    color: white;
-    z-index: 4;
 }
-#p2{
-    position: absolute;
-    transform: translate(90px,-500px) ;
-    color: white;
-    z-index: 4;
-}
-#p3{
-    position: absolute;
-    transform: translate(90px,-200px) ;
-    color: white;
-    z-index: 4;
-}
-span{
-    font-size: 40px;
-    position: absolute;
-    left: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 a:link{ text-decoration-line: none; color: white;}
 a:active{ text-decoration-line: none; color: #253900;}
 a:hover{ text-decoration-line: none;color: rgb(16, 139, 104);}
 a:visited{text-decoration-line: none;color: rgb(133, 149, 136);}
 
 /* 图片内容 */
+#gif{
+    width: 30vw;
+    position: absolute;
+    top: 9vw;
+    left: 35vw;
+}
 
 .pic2{
-    width: 200px;
-}
-#gif{
-    width: 400px;
-    position: fixed;
-    text-align: center;
-    top: 130px;
-    left: 530px;
+    width: 15vw;
 }
 #b1{
     position: absolute;
-    left: 10px;
-    top: 10px;
+    left: 3%;
+    top: 0;
     z-index: 1;
     
 }
 #b2{
     position: absolute;
-    left: 10px;
-    top: 270px;
+    left: 9%;
+    top: 12vw;
     z-index: 1;
 }
 #b3{
     position: absolute;
-    left: 10px;
-    top: 550px;
+    left: 2%;
+    top: 22vw;
+    z-index: 1;
+}
+#b4{
+    position: absolute;
+    left: 7%;
+    top: 35vw;
     z-index: 1;
 }
 
 /* 脸部动画 */
-@keyframes none1{
-    form{
-        z-index: 0;
-    }
-    to{
-        z-index: 8;
-    }
+#brahover:hover{
+    opacity: 100;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    transition-property: all;
 }
-@keyframes none2{
-    form{
-        z-index: 1;
-    }
-    to{
-        z-index: 8;
-    }
-}
-@keyframes none3{
-    form{
-        z-index: 2;
-    }
-    to{
-        z-index: 8;
-    }
-}
-@keyframes none4{
-    form{
-        z-index: 3;
-    }
-    to{
-        z-index: 8;
-    }
-}
-@keyframes none5{
-    form{
-        z-index: 4;
-    }
-    to{
-        z-index: 8;
-    }
+#brahover{
+    width: 30vw;
+    position: absolute;
+    top: 9vw;
+    left: 35vw;
+    opacity: 0;
+    z-index: 10;
+    transition: all 0.4s ease 0s;
 }
 /* hover动画 */
 #b1:hover{
     transition-timing-function: ease-in-out;
     transition-duration: 0.8s;
     transition-property: all;
-    transform: rotate(-90deg);
+    transform: rotate(-23deg);
     transition-delay: 0s;
 }
 #b1{
@@ -148,7 +144,7 @@ a:visited{text-decoration-line: none;color: rgb(133, 149, 136);}
     transition-timing-function: ease-in-out;
     transition-duration: 0.8s;
     transition-property: all;
-    transform: rotate(-90deg);
+    transform: rotate(-23deg);
     transition-delay: 0s;
 }
 #b2{
@@ -158,9 +154,19 @@ a:visited{text-decoration-line: none;color: rgb(133, 149, 136);}
     transition-timing-function: ease-in-out;
     transition-duration: 0.8s;
     transition-property: all;
-    transform: rotate(-90deg);
+    transform: rotate(-23deg);
     transition-delay: 0s;
 }
 #b3{
+    transition: all 0.4s ease 0s;
+}
+#b4:hover{
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.8s;
+    transition-property: all;
+    transform: rotate(-23deg);
+    transition-delay: 0s;
+}
+#b4{
     transition: all 0.4s ease 0s;
 }
